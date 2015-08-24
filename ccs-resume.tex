@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vitae Resume/CV
+%
+% Author:
+% Carlton Stedman (carlton.stedman@gmail.com)
+% https://github.com/carltonstedman/vitae
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+% Based on:
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Add 'print' as an option in square brackets to remove colors for printing
+\documentclass[]{vitae-cv}
+
+\begin{document}
+
+\header{Carlton}{Stedman}{
+  senior automation engineer}{continuous delivery advocate}{coffee addict}
+
+%------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%------------------------------------------------------------------------------
+
+% In the aside, each new line forces a line break
+\begin{aside}
+\section{contact}
+Nashua, NH
+~
+(401) 36-LIBRE
+~
+\href{mailto:carlton.stedman@gmail.com}{carlton.stedman@gmail.com}
+\href{http://github.com/carltonstedman}{github.com/carltonstedman}
+\href{http://twitter.com/carltonstedman}{@carltonstedman}
+\section{coding skills}
+\textbf{expert}
+Bash, Python, Ruby
+Chef, Git, Jenkins, Rspec
+Make, Packer, Vagrant
+{\color{red} $\varheartsuit$}Linux
+BDD/TDD, CI/CD
+~
+\textbf{adept}
+{\color{red} $\varheartsuit$}Clojure, \LaTeX, C, JVM
+AWS, KVM, Terraform
+{\color{red} $\varheartsuit$}FP, OOP
+~
+\textbf{apprentice}
+Ansible, Consul, Docker
+Golang, Haskell, JS, R
+\end{aside}
+
+%------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2013--Now}
+{Dyn}
+{Manchester, NH}
+{\emph{Senior Automation Engineer} \\
+Design, develop, maintain, assist, train, and mentor on all aspects of automation, config management, and CI/CD pipeline, including automated provisioning/deployment in dev VMs, AWS integration environments, and releasing to production on metal/KVM. \\
+
+\subsection{technical}
+\begin{itemize}
+\item Design, test, write, review, document, and deploy Chef cookbooks.
+\item Continuously improve internal tools in Python, Ruby, Bash, and Golang.
+\item Build Continuous Delivery (CD) pipelines with Chef, Jenkins, Packer, and Git.
+\item Develop automated testing with RSpec, Vagrant, Jenkins, and AWS.
+\item Maintain and debug Chef Enterprise, Jenkins, and Github
+  Enterprise servers.
+\end{itemize}
+
+\subsection{leadership}
+\begin{itemize}
+\item Directly mentor associate-level automation engineers.
+\item Perform training and office hours for tools, testing, Chef, CI/CD, and Git.
+\item Created and facilitated Continuous Delivery and Ruby bookclubs.
+\end{itemize}}
+
+%------------------------------------------------
+
+\entry
+{2010--2013}
+{Texas Instruments}
+{Manchester, NH}
+{\emph{Systems Engineer} \\
+Defined, modeled, simulated, evaluated, and characterized dc-dc switched-mode power supply (SMPS) integrated circuits (ICs) for telecom, test automation, and merchant power.
+\begin{itemize}
+\item Focused on PMBus analog and digital multiphase controllers/drivers.
+\item Visited, trained, and worked with customers to deliver solutions and drive NPD.
+\item Automated power supply IC characterization and testing using LabView/Python.
+\end{itemize}}
+
+%------------------------------------------------
+
+\entry
+{2007-2010}
+{ON Semiconductor}
+{East Greenwich, RI}
+{\emph{Application Engineer} \\
+Defined, modeled, simulated, evaluated, and characterized automotive-grade dc-dc switched-mode power supply (SMPS) integrated circuits (IC).
+\begin{itemize}
+\item Designed and performed presentations for sales/field and customers.
+\item Built Excel-/MathCAD-based design tools, VHDL-AMS/PSPICE models of SMPS.
+\item Created evaluation automation hardware and software (Python) system.
+\end{itemize}}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2014--Now}
+{Certificate {\normalfont in Data Science}}
+{John Hopkins University (Coursera)}
+{Have completed and verified three courses in Data Science track,
+  including:
+\begin{itemize}
+\item Data Scientist's Toolbox, R Programming, and Exploratory Data
+  Analysis.
+\end{itemize}}
+
+\entry
+{2003--2007}
+{Bachelor of Science {\normalfont in Electrical \& Computer Engineering}}
+{Worcester Polytechnic Institute}
+{\emph{Completed coursework for Minor in Computer Science,
+  Overall GPA: 3.41}
+\begin{itemize}
+\item Triple concentration: analog microelectronics, digital design, and power electronics
+\item Algorithms, Assembly, Networking, Operating Systems, Software Design
+\end{itemize}}
+%------------------------------------------------
+
+\end{entrylist}
+
+%------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%------------------------------------------------------------------------------
+
+\section{interests}
+
+\textbf{professional} -- automation, continuous delivery, concurrency
+\& parallelism, data science, \emph{kaizen}, functional programming, mentorship, programming languages,
+tool design \& improvement \\
+\textbf{personal} -- coffee homeroasting, cooking, electronics, homebrewing,
+powerlifting, yoga
+
+\rule{\linewidth}{.25pt}
+
+\small{This resume written in Xe\LaTeX using Emacs via \href{
+    https://github.com/carltonstedman/vitae/releases/tags/1.0.0}{
+    github.com/carltonstedman/vitae/releases/tags/1.0.0}}
+
+\end{document}
